@@ -11,8 +11,7 @@ function Weather() {
   //   e.preventDefault();
 
     console.log("I am click handler");
-    axios
-      .get(
+    axios.get(
         `https://express-api.up.railway.app/weather`
       )
       .then((response) => {
