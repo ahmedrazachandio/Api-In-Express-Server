@@ -13,7 +13,7 @@ function Weather() {
     console.log("I am click handler");
     axios
       .get(
-        `http://express-api.up.railway.app/`
+        `https://express-api.up.railway.app/weather`
       )
       .then((response) => {
         console.log("response: ", response.data);
@@ -28,6 +28,9 @@ function Weather() {
 
   return (
     <div>
+        <nav class="nav-bar">
+            <h1>Weather App</h1>
+        </nav>
       {/* <form onSubmit={submitHandler}>
         City Name:
         <input
