@@ -10,10 +10,10 @@ const port = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
-app.get('/', (req, res) => {
-    console.log("request ip:",req.ip);
-  res.send('Hello World' + new Date().toDateString())
-});
+// app.get('/', (req, res) => {
+//     console.log("request ip:",req.ip);
+//   res.send('Hello World' + new Date().toDateString())
+// });
 app.get("/weather", (req, res) => {
   // console.log("request ip:", req.ip);
   res.send({
