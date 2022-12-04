@@ -18,7 +18,7 @@ function Weather() {
       // console.log("response: ", response);
 
       setWeatherData(response);
-      // console.log(response);
+      // console.log(weatherData);
     })
     .catch((err) => {
       console.log("error: ", err);
