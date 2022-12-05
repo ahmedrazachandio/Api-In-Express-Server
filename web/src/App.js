@@ -16,7 +16,7 @@ function Weather() {
 
   console.log("I am click handler");
   axios.get(
-    `http://express-api.up.railway.app/weather`
+    `https://express-api.up.railway.app/weather`
   )
     .then((response) => {
       console.log("response: ", response.data);
