@@ -29,6 +29,22 @@ app.get("/weather", (req, res) => {
     windMPH: 4.3,
   });
 });
+app.get("/quizapp", (req, res) => {
+  // console.log("request ip:", req.ip);
+  res.send({
+    que: "what is your current Prime Minister",
+    option1: "Imran Khan",
+    option2: "Bilawal Bhutto",
+    option3: "Shahbaz Shareef",
+    ans: "Shahbaz Shareef",
+    
+  });
+});
+
+
+
+
+
 const __dirname = path.resolve();
 app.use("/", express.static(path.join(__dirname, "./web/build")));
 app.use("*", express.static(path.join(__dirname, "./web/build")));
