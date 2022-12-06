@@ -17,7 +17,7 @@ app.use(express.json());
 app.get("/weather", (req, res) => {
   // console.log("request ip:", req.ip);
   res.send({
-    city: "Karachi123",
+    city: "Karachi",
     text: "Clear",
     tempC: 22,
     tempF: 71,
@@ -35,7 +35,7 @@ app.get("/quizapp", (req, res) => {
     que: "what is your current Prime Minister",
     option1: "Imran Khan",
     option2: "Bilawal Bhutto",
-    option3: "Ahmed Raza",
+    option3: "Shahbaz Shareef",
     ans: "Shahbaz Shareef",
     
   });
